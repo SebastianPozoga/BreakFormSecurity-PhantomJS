@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Protected form</title> 
+        <script src="js/jquery-min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            $(document).ready(function() { 
+                $('#submit').click(function() {
+                    $('#formContainer').remove();
+                    $('#output').html("<h1>My secret code</h1><div class='code'>1AS2221DDS132DE</div");
+                    return false;
+                });
+            });
+        </script>
+        <div id="formContainer">
+            <h1>Get secret code</h1>
+            form protecte with js
+            <form id="securityForm" method="POST" action="#URLforStupidBoots;)">
+                <input id="submit" type="submit" value="GET" />
+            </form>
+        </div>
+        <div id="output"></div>
+    </body>
+</html>
